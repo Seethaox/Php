@@ -4,36 +4,24 @@
         <title> REGISTRATION </title>
     </head>
     <body>
-        <?php
-        include 'dbconnection.php';
-        if (isset($_POST['upload'])) {
-            
-        }
-        ?>
+       
         <?php
         include 'dbconnection.php';
         if (isset($_POST['submit'])) {
             $username = $_POST['name'];
-
             $password = $_POST['pwd'];
             $email = $_POST['mail'];
 
             $mobile = $_POST['mobile'];
             $gender = $_POST['gender'];
             $address = $_POST['address'];
-            $filetmp = $_FILES["file_img"]["tmp_name"];
-            $filename = $_FILES["file_img"]["name"];
-            if (isset($filename)) {
-                if (!empty($filename)) {
+            $filetmp = $_FILES['file_img']['tmp_name'];
+            $filename = $_FILES['file_img']['name'];
                     $location = "Photos/";
 
-                    $filepath = "Photos/" . $filename;
-                    if (move_uploaded_file($filetmp, $filepath)) {
-                        echo "Uploaded";
-                    }
-                }
-            }
-
+                    $filepath = $location . $filename;
+                    move_uploaded_file($filetmp, $filepath);
+                    
 
 
             $myquery = "INSERT into cus_register (name,password,pic,mail,mobile, gender,address) VALUES ('$username','$password','$filepath', '$email', '$mobile', '$gender', '$address')";

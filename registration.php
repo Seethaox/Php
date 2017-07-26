@@ -1,6 +1,5 @@
 
 
-
 <html>
     <head>
         <title> HTML Form </title>
@@ -25,6 +24,9 @@
 	border: none;
 
         </style>
+         <script src="jquery-3.2.1.min.js"></script>
+        <script src="Jquery.js"></script>
+
 
     </head>
     <body>
@@ -34,7 +36,7 @@
             <div id ="container">
                 <table align="center" height="500px" width="400px">
                     
-                        <tr><td>Name: </td><td><input type="text" id="name" name="name"  placeholder="Enter Your Name..."></td></tr>
+                        <tr><td>Name: </td><td><input type="text" id="name" name="name"  placeholder="Enter Your Name..."></td></tr> <span class="hidden" id="name_error"> </span>
                         <tr><td>Password: </td><td><input type="password" id="pwd" name="pwd"  placeholder="Enter a Password..."></td></tr>
                         <tr><td>Email: </td><td><input type="text" id="mail" name="mail" placeholder="Enter Your e-mail address..."></td></tr>
                         <tr><td>Contact no: </td><td><input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile Number..."></td></tr>
@@ -46,9 +48,9 @@
 
                        
 
-                        <tr><td> Address:</td><td> <textarea id="address" rows="5" name='address' placeholder="Give Your Feedback!!!"></textarea></td>
+                        <tr><td> Address:</td><td> <textarea id="address" rows="5" name="address" placeholder="Enter Your Address!!!"></textarea></td>
                         <tr><td></td><td>
-                                <input type="submit"  name="submit" class="btn" value="Submit"></td></tr>
+                                <input align="right" type="submit"  name="submit" class="btn" value="Submit"></td></tr>
                 </table>
             </div>
         </form>

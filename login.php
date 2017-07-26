@@ -22,6 +22,7 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($link, $myquery);
     if (mysqli_num_rows($result)== 1) {
         header('location: login_data.php');
+        $_SESSION['id'] = $id;
     }
     
     else
@@ -38,7 +39,7 @@ if (isset($_POST['submit'])) {
             .container
             {
                 width:500px;
-                height:400px;
+               
                 background-color:pink;
                 margin:0px auto;
                 text-align: center;
@@ -75,7 +76,7 @@ if (isset($_POST['submit'])) {
 
     </head>
     <body>
-        <h3 align="center"> USER LOGIN PAGE</font> </h3>
+        <h3 align="center"> USER LOGIN </h3>
         <table width="288" border="0" align="center">
             <tr>
                 <td width="256"><b><font color="red"><?php if ($result) {
