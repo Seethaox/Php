@@ -10,10 +10,11 @@
         if (isset($_POST['submit'])) {
             $username = $_POST['name'];
             $password = $_POST['pwd'];
-            $email = $_POST['mail'];
+            $email = $_POST['email'];
 
             $mobile = $_POST['mobile'];
             $gender = $_POST['gender'];
+            $date = $_POST['date'];
             $address = $_POST['address'];
             $filetmp = $_FILES['file_img']['tmp_name'];
             $filename = $_FILES['file_img']['name'];
@@ -24,7 +25,7 @@
                     
 
 
-            $myquery = "INSERT into cus_register (name,password,pic,mail,mobile, gender,address) VALUES ('$username','$password','$filepath', '$email', '$mobile', '$gender', '$address')";
+            $myquery = "INSERT into cus_register (name,password,pic,mail,mobile, gender,dob,address) VALUES ('$username','$password','$filepath', '$email', '$mobile', '$gender','$date','$address')";
 
             $result = mysqli_query($link, $myquery);
 

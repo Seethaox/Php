@@ -12,9 +12,8 @@ if (isset($_POST['submit'])) {
     $pwd = $_POST['password'];
 
     if (empty($id) || empty($pwd)) {
-        echo '<script language="javascript">';
-        echo 'alert("Enter all Data")';
-        echo '</script>';
+        echo '<script language="javascript"> alert("Enter all data")</script>';
+
     }
 
     $myquery = "select * from cus_register where id='$id' AND password='$pwd'";
@@ -39,7 +38,6 @@ if (isset($_POST['submit'])) {
             .container
             {
                 width:500px;
-               
                 background-color:pink;
                 margin:0px auto;
                 text-align: center;
@@ -76,6 +74,7 @@ if (isset($_POST['submit'])) {
 
     </head>
     <body>
+         <div class="container">
         <h3 align="center"> USER LOGIN </h3>
         <table width="288" border="0" align="center">
             <tr>
@@ -85,7 +84,7 @@ if (isset($_POST['submit'])) {
             </tr>
         </table>
         <br>
-        <div class="container">
+       
 
             <form method="POST" action="">
                 Customer ID :<input type ="text" name="id" placeholder="Enter your Customer Id"><br>

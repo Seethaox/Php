@@ -1,7 +1,4 @@
-*{
- margin:0px;
- padding:0px;
- }
+
  .hidden{
      display: none;
  }
@@ -15,9 +12,7 @@
  margin-bottom:10px;
  }
  
- #container_body{
- padding:20px;
- }
+ 
  
  .heading{
  font-size:25px;
