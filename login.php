@@ -1,6 +1,7 @@
 <?php
-if (!isset($_SESSION['id'])) {
     session_start();
+if (isset($_SESSION['id'])) {
+    header('location: login_data.php');
 }
 ?>
 
@@ -15,8 +16,9 @@ if (isset($_POST['submit'])) {
     $myquery = "select * from cus_register where id='$id' AND password='$pwd'";
     $result = mysqli_query($link, $myquery);
     if (mysqli_num_rows($result)== 1) {
-        header('location: login_data.php');
+        session_start();
         $_SESSION['id'] = $id;
+        header('location: login_data.php');
     }
     
     else

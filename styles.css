@@ -1,46 +1,46 @@
- #container{
- width:700px;
- height: 500px;
- background-color:pink;
- margin:auto;
- border-radius: 48px;
- 
- }
- 
- .hidden
- {
-	 display:none;
- }
- 
- 
- span{
-     color: red;
-     
- }
- 
- #header{
- font-size:25px;
- color:Blue;
- text-align:center;
- padding:10px;
- font-weight:bold;
- }
- 
-  
- label
- {
-	 width:100px;
-	 padding-left: 50px;
-	 color: blue;
-	 font-weight: bold;
-	 margin: 10px 20px;
+#container{
+    width:700px;
+    height: 500px;
+    background-color:pink;
+    margin:auto;
+    border-radius: 48px;
+
+}
+
+.hidden
+{
+    display:none;
+}
+
+
+span{
+    color: red;
+
+}
+
+#header{
+    font-size:25px;
+    color:Blue;
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+}
+
+
+label
+{
+    width:100px;
+    padding-left: 50px;
+    color: blue;
+    font-weight: bold;
+    margin: 10px 20px;
     display: inline-block;
-	
-   
-   
- }
- 
- .btn {
+
+
+
+}
+
+.btn {
     background-color: #4CAF50; /* Green */
     color: white;
     padding: 15px 32px;
@@ -48,29 +48,29 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-	border-radius: 4px;
+    border-radius: 4px;
 }
 
 input[type=text],input[type=email], input[type=password],select{
     width: 300px;
     display: inline-block;
     border-radius: 4px;
-	margin-top: 15px;
-	padding: 7px;
-   
+    margin-top: 15px;
+    padding: 7px;
+
 }
 
 
 input[type=submit]
 {
-	border-radius: 4px;
-	margin-left: 300px;
-	margin-top: 10px;
-	
+    border-radius: 4px;
+    margin-left: 300px;
+    margin-top: 10px;
+
 }
 
 textarea
 {
-	width: 300px;
-	margin-top: 10px;
+    width: 300px;
+    margin-top: 10px;
 }
