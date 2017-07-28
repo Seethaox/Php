@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    alert('Hi');
 
     $("#name").blur(function () {
 

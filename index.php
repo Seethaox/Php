@@ -7,7 +7,7 @@
     <body>
         <div id="content">
         <h2 align="center">HOME PAGE </h2><br><br>
-        <a href="registration.php"> <button type="submit" class="btn"> Register </button></a>
+        <a href="register.php"> <button type="submit" class="btn"> Register </button></a>
         <a href="login.php"> <button type="submit" class="btn"> Login </button></a>
 
 
